@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Imagine Wizards</title>
+    <link rel="icon" type="image/x-icon" href="/images/logo2.png">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> <!-- Adding W3Css -->
+
+    <!-- Demo styles -->
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: white;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      #navBar{
+        height: 6.5vw;
+      }
+
+      #logo{
+        height: 6.25vw;
+        width: 6.25vw;
+        border-radius: 0.75vw;
+        margin-left: 5vw;
+      }
+
+      .firstBanners{
+          height:30vw;
+          width: 100vw;
+      }
+  
+      .arrowsBanner{
+          opacity: 0.4;
+          color:red;
+      }
+
+      .arrowsBanner:hover{
+          opacity: 1;
+      }
+
+      #firstLine{
+        font-size: 1vw;
+        font-family:Arial, Helvetica, sans-serif;
+        padding-top: 0.5vw;
+        padding-bottom: 0.5vw;
+      }
+
+      .ProductHeadingsTxt{
+          font-size: 2vw;
+          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+          text-transform: capitalize;
+          margin-top: 2vw;
+          font-weight: 900;
+          color:black
+      }
+
+      ul > li {
+          display: inline-block;
+      }
+
+      .productCards1{
+          height: 28vw;
+          width: 28vw;
+          margin-left: 2.5vw;
+          margin-bottom: 2.5vw;
+      }
+
+    </style>
+  </head>
+
+  <body>
+
+    <div class="w3-red w3-center" id="firstLine">Sale is Live on Imagine Wizards. Shop NOW!</div>
+    <div id="navBar" class="w3-card w3-black">
+        <img id="logo" src="./images/logo2.png">
+    </div>
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper firstBanners">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <img class="prodList2" src="./images/Banner1.jpg">
+        </div>
+        <div class="swiper-slide">
+            <img class="prodList2" src="./images/Banner1.jpg">
+        </div>
+        <div class="swiper-slide">
+            Slide 3
+        </div>
+        <div class="swiper-slide">
+            Slide 4
+        </div>
+        <div class="swiper-slide">
+            Slide 5
+        </div>
+      </div>
+
+      <div class="swiper-button-next arrowsBanner"></div>
+      <div class="swiper-button-prev arrowsBanner"></div>
+    </div>
+
+    <section>
+        <div id="ProductHeadingsTxt1" class="w3-center ProductHeadingsTxt">COLLECTIONS</div>
+
+        <div class="ProductCardsDiv">
+            <ul class="ProductCardsList" style="list-style-type:none;">
+                <li><img class="productCards1" src="./images/prod1.png"></li>
+                <li><img class="productCards1" src="./images/prod2.png"></li>
+                <li><img class="productCards1" src="./images/logo2.png"></li>
+                <li><img class="productCards1" src="./images/logo2.png"></li>
+                <li><img class="productCards1" src="./images/logo2.png"></li>
+                <li><img class="productCards1" src="./images/logo2.png"></li>
+                <li><img class="productCards1" src="./images/logo2.png"></li>
+                <li><img class="productCards1" src="./images/logo2.png"></li>
+                <li><img class="productCards1" src="./images/logo2.png"></li>
+
+            </ul>
+        </div>
+
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        autoplay: {
+            delay: 2000,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+
+    <!-- Initialize Swiper 2-->
+    
+  </body>
+</html>
